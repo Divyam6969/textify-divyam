@@ -1,9 +1,10 @@
-<h3>Click here to view project</h3>
+<h3>Click here to view website </h3>
 <a href="https://textify-divyam.netlify.app/">https://textify-divyam.netlify.app/</a>
 
 
 
-# Getting Started with Create React App
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
