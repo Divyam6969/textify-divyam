@@ -60,7 +60,7 @@ function App() {
             <About />
           </Route>
           <Route path="/">
-            <TextForm heading="Enter the text to analyse" mode={Mode}/>
+            <TextForm heading="Try Textify | Word counter | Characters counter | Remove extra spaces" mode={Mode}/>
           </Route>
     </Switch>
     </div>

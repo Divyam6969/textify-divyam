@@ -44,11 +44,11 @@ export default function Textform(props) {
     <h3 htmlFor="mybox" className="my-2">{props.heading} </h3>
     <textarea className="form-control" value={text} onChange={handleOnchange} style={{backgroundColor: props.mode==='dark'?'#063970':'white', color: props.mode==='dark'?'white':'black'}} id="mybox" rows="8"></textarea>
     </div>
-    <button className="btn btn-primary mx-2" onClick={handleUpclick}>Convert to uppercase</button>
-    <button className="btn btn-primary mx-2" onClick={handleLowclick}>Convert to lowercase</button>
-    <button className="btn btn-primary mx-2" onClick={handleExtraspaces}>Remove extra spaces</button>
-    <button className="btn btn-primary mx-2" onClick={handleCopyclick}>Copy to clipboard</button>
-    <button className="btn btn-primary mx-2" onClick={handleClear}>Clear the text box</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleUpclick}>Convert to uppercase</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleLowclick}>Convert to lowercase</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleExtraspaces}>Remove extra spaces</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleCopyclick}>Copy to clipboard</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleClear}>Clear the text box</button>
 
     <div className="container my-3" style={{color: props.mode==='dark'?'white':'black'}}>
         <h1>your text details</h1>
